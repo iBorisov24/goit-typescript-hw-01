@@ -3,8 +3,11 @@ type User = {
 	likes: number;
 	accounts: string[];
 	status: string;
-	details?: {};
-};
+	details?: {
+		createAt: Date;
+		updateAt: Date;
+	};
+}
 
 const page1: User = {
 	title: 'The awesome page',
